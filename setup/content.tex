@@ -1,0 +1,58 @@
+%以下由王辉增加(2012年12月16日)，主要是修改英文目录和图标目录
+%Revision 1: 目录中的点的稠密程度
+\makeatletter
+\def\@dotsep{0.3}%就在这儿改，把2改成其他什么，默认是4.5，就是点之间距离为4.5mu
+\makeatother
+
+
+
+%Revision 2: Formatting Table of Contents in Chinese and English
+%Font
+\titlecontents{chapter}[10mm]
+{\fontsize{12pt}{15pt}}
+{\contentslabel{4em}}
+{}
+{\titlerule*{.}\contentspage}
+%
+\titlecontents{section}[12mm]
+{\fontsize{12pt}{15pt}}
+{\contentslabel{2em}}
+{}
+{\titlerule*{.}\contentspage}
+%
+\titlecontents{subsection}[23mm]
+{\fontsize{12pt}{15pt}}
+{\contentslabel{3em}}
+{}
+{\titlerule*{.}\contentspage}
+
+%Indent
+\dottedcontents{chapter}[0.32cm]{\vspace{0.2em}}{1.0em}{5pt}
+\dottedcontents{section}[1.32cm]{}{1.8em}{5pt}
+\dottedcontents{subsection}[2.32cm]{}{2.7em}{5pt}
+\dottedcontents{subsubsection}[3.32cm]{}{3.4em}{5pt}
+
+%Revision 3: Content in English
+\makeatletter
+\newcommand\engcontentsname{\hfill CONTENTS \hfill}
+%\newcommand\engcontentsname{CONTENTS}
+\newcommand\tableofengcontents{%
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\engcontentsname
+        \@mkboth{%
+           \MakeUppercase\engcontentsname}{\MakeUppercase\engcontentsname}}%
+    \@starttoc{toe}% !!!!Define a new contents!!!!
+    \if@restonecol\twocolumn\fi
+    }
+\newcommand\addengcontents[2]{%
+    \addcontentsline{toe}{#1}{\protect\numberline{\csname the#1\endcsname}#2}}
+\makeatother
+\newcommand\echapter[1]{\addengcontents{chapter}{#1}}
+\newcommand\esection[1]{\addengcontents{section}{#1}}
+\newcommand\esubsection[1]{\addengcontents{subsection}{#1}}
+\newcommand\esubsubsection[1]{\addengcontents{subsubsection}{#1}}
+
