@@ -12,44 +12,47 @@
 % 编译环境2：Windows 7 + CTeX v2.9.2.164 + WinEdit
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\documentclass[12pt,a4paper,openany,twoside]{book}
+
+\documentclass[12pt, a4paper, openany, twoside]{book}
+%http://www.latex-community.org/forum/viewtopic.php?f=45&t=9323
+%rotation of the images in latex
 
 % 字体配置文件
 \input{setup/fonts}
 
-% Used packages
-\input{setup/package.tex}
+% 宏包配置文件
+\input{setup/packages}
 
-% Settings about Table of Contents (Jie Li and Ahmedin on the work of Hui Wang)
+% 格式文件
+%\input{setup/format}
+\input{setup/format}
+
 \input{setup/content.tex}
 
-% The content
 \begin{document}
-\begin{CJK*}{GBK}{song}
+% 格式文件
 
-% Format of text
-\input{setup/format.tex}
-
-% All the figures are in the folder of figures
+% 定义所有的图片文件在 figures 子目录下
 \graphicspath{{figures/}}
 
-% Introduction
+% 前言
 \frontmatter
 \pagenumbering{Roman}
-\input{preface/cover.tex}       % cover 封面
+\input{preface/cover}       	% 封面
 \eoriginality
-\originality                    % originality 独创性
+\originality              		% 独创性
 \makeabstract
 
-% Table of Contents
-\tableofengcontents % table of contents in English
-%\tableofcontents    %table of contents in Chinese
-
-%\addcontentsline{toc}{chapter}{CONTENTS}
+% 设置目录字体和行间距
+%\defaultmenufont
+% 目录
+\tableofcontents
 \cleardoublepage
-
-%\newcommand{\loflabel}{图}
-%\renewcommand{\numberline}[1]{\loflabel~#1\hspace*{1em}}
+% 插图目录
+% \listoffigures
+% 表格目录
+% \listoftables
+\cleardoublepage
 
 % Control of the space between figures
 \makeatletter
@@ -81,18 +84,21 @@
 \listoftables
 \addcontentsline{toe}{chapter}{List of Tables}
 
+
 \defaultfont
 \mainmatter
-% Content of each chapter
+% 正文章节
 \defaultfont
 \renewcommand{\thefootnote}{\arabic{footnote}}
-\include{body/Chap1_Introduction}
-\include{body/Chap2_StateOftheArt}
-\include{body/Chap3_ASNETFramework}
-\include{body/Chap4_ComPAS}
-\include{body/Chap5_Co-Lab}
-\include{body/Chap6_BoDMaS}
-\include{body/Chap7_Conclusion}
+\include{body/chap00}
+\include{body/chap01}
+\include{body/chap02}
+\include{body/chap03}
+
+% 结论
+\include{body/conclusion}
+\cleardoublepage
+% \backmatter
 
 \cleardoublepage
 %\backmatter
@@ -143,8 +149,6 @@
 \eauthorization
 \authorization
 \cleardoublepage
-
-\end{CJK*}
 \end{document}
 
 %%%%%%%%%%%%%%%%%% End of the file  %%%%%%%%%%%%%%%%%%%%%%%%
