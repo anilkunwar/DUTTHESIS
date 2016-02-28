@@ -33,6 +33,7 @@
 \usepackage[mathscr]{eucal} % to replace the following commented package
 %\usepackage{mathrsfs}   % 一种常用于定义泛函算子的花体字母，只有大写。
 \usepackage[amsmath,thmmarks,hyperref]{ntheorem} % 定理类环境宏包，其中 amsmath 选项用来兼容 AMS的宏包
+%\usepackage[amsmath,thmmarks]{ntheorem}
 \usepackage{type1cm}    % 控制字体的大小
 \usepackage{bm}         % 处理数学公式中的黑斜体的宏包
 %\usepackage{fourier}    % 一种和Times类似的字体
@@ -64,17 +65,29 @@
 % 其他
 \usepackage{calc}   % 在 tex 文件中具有一些计算功能，主要用在页面控制。
 \usepackage{ccmap}      % 使pdfLatex生成的文件支持复制等
-\usepackage[pdftex,
-            CJKbookmarks=true,
-            bookmarksnumbered=true,
-            bookmarksopen=true,
-            colorlinks=true,
-            citecolor=black,
-            linkcolor=black,
-            anchorcolor=green,
-            urlcolor=magenta,
-            breaklinks=true
-            ]{hyperref} % 生成有书签和超链接的 pdf
+%\usepackage[pdftex,
+            %CJKbookmarks=true,
+            %bookmarksnumbered=true,
+            %bookmarksopen=true,
+            %colorlinks=true,
+            %citecolor=black,
+            %linkcolor=black,
+            %anchorcolor=green,
+            %urlcolor=magenta,
+            %breaklinks=true
+            %]{hyperref} % 生成有书签和超链接的 pdf
+\usepackage[xetex,
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	colorlinks=true,
+	% pdfborder={0 0 1},
+	citecolor=blue,
+	linkcolor=blue,
+	anchorcolor=green,
+	urlcolor=magenta,
+	breaklinks=true,
+	CJKbookmarks=true,
+	]{hyperref}
 
 
 
