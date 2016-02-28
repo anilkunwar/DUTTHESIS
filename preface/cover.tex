@@ -1,56 +1,46 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
+% % !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
 %   Doctoral Dissertation of Dalian University of Technology
-%   By Jie Li and Ahmedin Mohammed Ahmed on the work of Hui Wang
-%   cover.tex
+%   By Anil Kunwar on the works of Jie Li, Ahmedin Mohammed Ahmed, Hui Wang, Yuri and Whufanwei
+%   main.tex
 %   Version: 0.1
 %   Update: 2014-04-16
-%   Environment: Windows 8.1 + CTeX 2.9.2.164 + WinEdt 7.0
-%   欢迎使用，如有任何意见和建议请发送邮件至 yuri_1985@163.com，感谢您的支持！
+%% Environment 编译环境1：Ubuntu 14.04 + TeXLive 2015 
+%   For further details,contact yuri_1985@163.com
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\etitle{Data Management Middleware Protocols in Ad-hoc Social Networks}
-\ctitle{自组织社会网络中的数据管理中间件协议}
+\etitle{Dimensional Change of Solder Bubbles and Intermetallic Compounds under Field Gradients in Tin Solders}
+\ctitle{大连理工大学博士学位论文~\XeLaTeX{}~模版}
 %\ctitle{大连理工大学博士学位论文格式规范}
 
-\cauthor{Ahmedin Mohammed Ahmed}
-\cauthorno{11117019}
-\department{School of Software}
-\csubject{Computer Science and Technology}
+\cauthor{Anil Kunwar}
+\cauthorno{11225045}
+\department{School of Materials Science and Engineering}
+\csubject{Materials Science}
 
 
-\cdate{November 22, 2014}
-\csupervisor{Feng Xia}
+%\cdate{November 22, 2014}
+\cdate{February 5, 2016}
+\csupervisor{Ma Haitao}
 
 \eabstract{
-Ad-hoc social networks (ASNETs) provide infrastructure-less settings for mobile users to communicate with each other opportunistically. Taking advantage of the users' social characteristics collected from modern sensor devices can enhance and fine tune the performance of mobile ad-hoc networking. Middleware design for this socially-aware paradigm is of paramount importance to develop innovative applications and services easily and efficiently. Nevertheless, due to various limitations such as lack of centralized management, device heterogeneity, unreliable wireless communication, mobility, resource constraints, or the need to support different traffic types, a number of new challenges have emerged recently.  One of the main challenges is performance degradation and implementation inefficiencies, which are caused by the gap between the application and lower layer protocols. In addition, managing data poses a severe challenge for both human beings and wireless networking systems, which usually only model protocols by ignoring or within a certain consideration of users' social and mobility information. ASNETs can be of immense use in case of pervasive conference/meeting and ubiquitous emergency situations. Most scenarios of this network clearly illustrate the relevance of incorporating important services or modules (e.g., data management) with middleware design for proper wireless network operation.
-
-In previous works, ad-hoc networking frameworks have been proposed and data management issues were investigated in which social awareness was not considered. To address the downside, we focus on developing a formal framework for ASNETs middleware upon which design and proposal of our data management protocols can be based. We take advantages of social networks and mobile ad-hoc networks to integrate social-awareness and user mobility, respectively. This leads us to investigate various aspects of data management middleware problems including data availability, load distribution and users' cooperative participation in partitioned communities. ASNETs differ from social networks in which disconnections are the norm instead of the exception. Traditionally, different ideal approaches are widely used to facilitate data availability, even load distribution and users cooperation. However, the quality of wireless links would be affected by many factors like mobility, overhead and users' selfish behavior. A data replication methodology and community-partitioning concept is applied intensively throughout the course of this study to tackle the aforementioned challenges. To the best of our knowledge, this is the first work to explore data availability, load distribution and selfishness issues together in ASNETs.
-
-The accessibility and availability of ASNET services can be assured by replication approaches. Replica allocation helps to avoid data losses in case of an unpredictable group mobility that causes community partition and also aids in reducing the number of hops when a data is transmitted from source to destination. However, it is impossible to replicate all data items on every node because of the limited resources. The question here is, where and how we should allocate the data replicas to gain high data accessibility and availability.  We first contribute to this line of research with replication protocol for maximizing availability of a data by proposing ComPAS, a community-partitioning aware replica allocation method. In ComPAS, we apply an efficient and consistent way to store replicas for each user's data. Consequently, we choose the numbers of replicas depending on the replication budget of the system and its desired availability. Its goal include integration of social relationship for placing copy of the data in the community to achieve better consistency by keeping the replica read cost, relocation cost and traffic as low as possible. It tries to balance the community storage space load as next goal. ComPAS offers a more interesting pattern in terms of read cost as compared to other schemes and it is highly efficient when relocation of replicas happened in the network.
-
-ASNET systems are poised with challenges of performance degradation and poor scalability. This is typically caused by an uneven load distribution of operations and the susceptibility of link failure. The fair functionality of any distributed system can be realized by allowing its integral computational elements to work cooperatively. An effective load balancing mechanism guarantees optimal use of the system resources whereby no broker remains in an under-loaded state while any other broker is being overloaded. In many of today's distributed environments including ASNETs, users are linked with limited resources such as storage space and bandwidth that inherently inflicts tangible delays. This leads the users to rely on inter-resource communications and load exchange throughout the network. To be able to fully benefit from such networking systems, data availability and resource distribution are key services, where issues of load distribution, partitioning and fault tolerance present a common challenge. Herein, we enhance the data management performance by proposing Co-Lab, community-based event dissemination with load balancing and fairness mechanism. This protocol employs interest similarity and filter replication approaches for clustering brokers in a community. Its goals are to achieve better load distribution more uniformly among brokers and circumvent highly overloaded brokers by keeping the reliability as high as possible. Performance evaluations indicate that Co-Lab has promising advantages by achieving relatively better load balance, reduced overall load, and robustness against failures.
-
-Another shortcoming of existing data management protocols is the assumption that users are cooperative when participating in operations such as forwarding data. If nodes refuse to collaborate in the network services, end-to-end connection may not be possible. Such unwilling (selfish) behavior can greatly degrade the network performance. Therefore, it is essential to detect such selfish users and mitigate their impact on the performance of other well-behaving users. Even though solutions for detecting selfish users have been explored before, a few fundamental shortcomings surrounding the problem have remained unaddressed, particularly in data dissemination and forwarding for ASNET services. Thus, we attempt to design an algorithm that gives each user the autonomy to identify and exclude selfish users. Features like these can often be observed in biological processes such as bacteria and inspired us for augmenting our new cooperative architectural concept to the replica allocation protocol. In this work, we propose a biologically inspired algorithm to detect and mitigate the impact of selfish users called BoDMaS that employs ComPAS as a data replication model. Using social and biological mechanisms, BoDMaS assesses and classifies users, and denies selfish user participation. The effectiveness of the proposed scheme is evaluated using different metrics selected for evaluation, demonstrating its ability of accurately detecting selfishness in replication operations for ASNET environments.
+Abstract and in English Language
 }
 
-\ekeywords{Ad-hoc Social Networks; Middleware; Data Management; Replication; Load Balancing; Selfishness}
+\ekeywords{5-6 Keywords in English Language}
+
 
 \cabstract{
-自组织社会网络为移动用户间提供了基础设施无关的机会性沟通环境。充分利用由现代传感设备采集的用户社会性特征有助于提升和改善移动自组织网络的性能。其中，以社会感知机制为基础设计的中间件对简洁高效地开发创新性的应用与服务具有重要的作用。然而，由于受到多种因素的限制，如缺乏集中管理、设备异构性、无线通信的不可靠性、移动性、资源约束、需要支持多种流量类型等，一些新的挑战也应运而生。其中一个主要挑战是由应用程序和底层协议之间的差异而造成的性能下降和实施效率低下的问题。此外，数据管理也为人类和无线网络系统提出了严峻的挑战，由于目前仅仅忽略或者只在一定程度上考虑了用户社会和移动信息。自组织社会网络可以广泛地应用在会议场所和一些紧急情况下，其实际场景能清晰地说明在合适的无线网络操作中将重要的服务或模块（如数据管理）和中间件设计相结合的重要性。
-
-在目前的工作中，自组织网络框架已经被提出，但从未在数据管理中考虑社会感知问题。为解决这一不足之处，本文专注于为自组织社会网络中间件开发一个正式的框架，在其上可以设计和提出数据管理协议。本文充分利用社会网络和移动自组织网络去整合社会感知和用户移动性。这促使本文探讨了数据管理中间件的各方面问题，包括数据可用性、负载分配和社群中用户合作问题。自组织社会网络不同于社会网络在于其网络结构是经常性断连的。传统上，理想方法被广泛的用于解决数据可用性，甚至是负载分配和用户合作问题。然而，无线链路的质量受多种因素影响，例如移动性、开销和用户自私行为。为应对上述挑战，数据拷贝方法和社群划分概念在本文的研究过程中得到了广泛地应用。据我们所知，这是第一次在自组织社会网络中同时研究数据可用性、负载分配和自私问题。
-
-自组织社会网络服务的可访问性和可用性可由拷贝方法来保证，该方法有助于避免因组群的不确定性移动引起的社群划分以及数据丢失，同时也利于减少数据从源端到目的端经历的跳数。但是由于资源限制，不可能在每个节点上拷贝所有的数据项。问题由此产生，在何处、如何分配数据副本以获得高数据可访问性和可用性。本文首先在该方向上以最大化数据可用性为目标设计拷贝协议ComPAS，一个基于社群划分感知的拷贝分配方法。ComPAS运用一致有效的方式为每位用户存储数据副本，它基于系统的拷贝预算及其所需可用性来选择副本数量。该方法的目标包括利用社会关系为社群中的数据设置拷贝，通过尽可能降低拷贝读取消耗、重定位消耗和通信量，提高有效性和一致性。该方法同时将平衡社群存储空间负载作为另一个目标。与其他方案相比，ComPAS在读取消耗上提供了更引人关注的模式，并且能高效处理网络中的副本重定位问题。
-
-自组织社会网络系统同时面临着性能退化和稳定性差的挑战，这是由工作时的负载不均衡分布和链路失效造成的。分布式系统的正常功能是由其各个计算模块协同工作而实现的。一个有效的负载均衡策略能保证系统资源的优化利用，并且各个代理中不会出现空载或过载的情况。在现如今的许多分布式环境中，包括自组织社会网络，用户由有限的存储空间、带宽等资源相连接从而造成时延，这使得用户需要依靠遍及整个网络的资源通信和负载交换。为了充分利用这类网络系统，数据可用性和资源分发是关键问题，其中负载均衡、分区和容错都是需要解决的问题。因此，本文提出了基于社群的、具有负载均衡与公平机制的事件分发方法Co-Lab，强化了数据管理性能。该方法采用兴趣相似性和过滤拷贝方法在社群内进行代理分簇。Co-Lab的目标是在社群代理间获得更加均匀的负载分布，在保持尽可能高的可靠性下避免过载代理的出现。性能评价部分表明Co-Lab具有明显的优势，可以达到相对更好的负载均衡，降低总体负载，以及对于失效情况的鲁棒性。
-
-现有的数据管理协议的另一不足之处在于进行转发数据等操作时通常会假设用户是合作的。如果节点拒绝合作，端到端的连接就无法形成。这样的非自愿（自私）的行为会严重降低网络的性能。所以，探测自私用户、减轻其对合作用户的影响是必不可少的。尽管在探测自私用户方面已有研究，但是围绕该问题仍存在一些问题，尤其是面对自组织网络中的数据分发和转发服务时。所以，本文意欲设计一种算法，让每位用户能自主地识别和排除自私用户。这类特性可以从细菌等的生物过程中观察得出，并且启发我们将这一新的合作框架的概念用于拷贝分配协议上。因此，本文提出了一种以ComPAS为数据拷贝模型的生物启发式的算法，称作BoDMaS，以探测和减轻自私节点的影响。BoDMaS采用社会和生物机制，对用户进行评估和分类，并拒绝自私用户的参与。为评价该策略的有效性，本文采用了不同的指标。结果表明，在自组织社会网络环境下，BoDMaS能准确探测在拷贝操作中的自私性。
+Abstract in Chinese Language
 }
 
-\ckeywords{自组织社会网络；中间件；数据管理；拷贝；负载均衡；自私性}
+\ckeywords{Keywords in Chinese Language}
 
 
-
+%\XeLaTeX{} Template}
 \makecover
