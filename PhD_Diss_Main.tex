@@ -1,16 +1,21 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%   Doctoral Dissertation of Dalian University of Technology
-%   By Jie Li and Ahmedin Mohammed Ahmed on the work of Hui Wang
-%   main.tex
-%   Version: 0.1
-%   Update: 2014-04-16
-%   Environment: Windows 8.1 + CTeX 2.9.2.164 + WinEdt 7.0
-%   »¶Ó­Ê¹ÓÃ£¬ÈçÓĞÈÎºÎÒâ¼ûºÍ½¨ÒéÇë·¢ËÍÓÊ¼şÖÁ yuri_1985@163.com£¬¸ĞĞ»ÄúµÄÖ§³Ö£¡
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% 
+%	å¤§è¿ç†å·¥å¤§å­¦åšå£«è®ºæ–‡ XeLaTeX æ¨¡ç‰ˆ â€”â€” ä¸»æ–‡ä»¶ main.tex
+% ç‰ˆæœ¬ï¼š0.82
+% æœ€åæ›´æ–°ï¼š2012.05.09
+% ä¿®æ”¹è€…ï¼šYuri (E-mail: yuri_1985@163.com)
+% ä¿®è®¢è€…ï¼šwhufanwei(E-mail: dutfanwei@qq.com)
+% ç¼–è¯‘ç¯å¢ƒ1ï¼šUbuntu 12.04 + TeXLive 2011 + Emacs
+% ç¼–è¯‘ç¯å¢ƒ2ï¼šWindows 7 + CTeX v2.9.2.164 + WinEdit
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \documentclass[12pt,a4paper,openany,twoside]{book}
+
+% å­—ä½“é…ç½®æ–‡ä»¶
+\input{setup/fonts}
 
 % Used packages
 \input{setup/package.tex}
@@ -31,9 +36,9 @@
 % Introduction
 \frontmatter
 \pagenumbering{Roman}
-\input{preface/cover.tex}       % cover ·âÃæ
+\input{preface/cover.tex}       % cover å°é¢
 \eoriginality
-\originality                    % originality ¶À´´ĞÔ
+\originality                    % originality ç‹¬åˆ›æ€§
 \makeabstract
 
 % Table of Contents
@@ -43,7 +48,7 @@
 %\addcontentsline{toc}{chapter}{CONTENTS}
 \cleardoublepage
 
-%\newcommand{\loflabel}{Í¼}
+%\newcommand{\loflabel}{å›¾}
 %\renewcommand{\numberline}[1]{\loflabel~#1\hspace*{1em}}
 
 % Control of the space between figures
@@ -129,9 +134,9 @@
 
 % Copyright Aughorization
 \chapter*{}
-\addcontentsline{toc}{chapter}{´óÁ¬Àí¹¤´óÑ§Ñ§Î»ÂÛÎÄ°æÈ¨Ê¹ÓÃÊÚÈ¨Êé}
+\addcontentsline{toc}{chapter}{å¤§è¿ç†å·¥å¤§å­¦å­¦ä½è®ºæ–‡ç‰ˆæƒä½¿ç”¨æˆæƒä¹¦}
 \addcontentsline{toe}{chapter}{Dalian University of Technology Doctoral Dissertation Copyright Use Authorization}
-\addcontentsline{toe}{chapter}{´óÁ¬Àí¹¤´óÑ§Ñ§Î»ÂÛÎÄ°æÈ¨Ê¹ÓÃÊÚÈ¨Êé}
+\addcontentsline{toe}{chapter}{å¤§è¿ç†å·¥å¤§å­¦å­¦ä½è®ºæ–‡ç‰ˆæƒä½¿ç”¨æˆæƒä¹¦}
 
 \renewcommand{\baselinestretch}{1.61}
 \vspace{-0.48cm}
