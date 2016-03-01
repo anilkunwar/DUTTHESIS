@@ -113,6 +113,9 @@
 \include{appendix/innovation}
 \cleardoublepage
 % References
+%For generation of bibliography file use this command.
+% For this the user is require to run Xelatex + LatexMk and Xelatex command again
+% Moreover in the setup/package.tex; the \usepackage[numbers]{natbib} and \usepackage{cite} must be uncommented
 %\twelve
 %\bibliographystyle{GBT7714-2005NLang}
 %\phantomsection
@@ -120,6 +123,11 @@
 %\addcontentsline{toe}{chapter}{References}
 %\bibliography{body/my_references}
 %\cleardoublepage
+
+%this is for manual bibliography entry via \bibitem
+% For this LatexMk does not need to be run
+% \usepackage[numbers]{natbib} and \usepackage{cite} should be commented in setup/package.tex
+% \usepackage[numbers,sort&compress,square,super]{natbib}  should be uncommented in the same texfile.
 \defaultfont
 \wuhao
 \bibliographystyle{zjugbno}
