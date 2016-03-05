@@ -1,5 +1,62 @@
-\chapter{State of the Art: Background and Recent Developments}\label{Chap2}
-\echapter{State of the Art: Background and Recent Developments}
+\chapter{State of the Art: Literature Review and Recent Developments}\label{Chap2}
+\echapter{State of the Art: Literature Review and Recent Developments}
+
+\section{Highlights}\label{Chap2_01}
+\esection{Highlights}
+\begin{itemize}
+\item 1. Theoretical tools initiated by many researchers:
+Solder voids
+IMC growth under electric field
+
+\item 2. Utilization of Synchrotron Radiation Experimental Set Up.
+
+\item 3. Numerical Methods and Computational Softwares
+
+\item 4. CALPHAD and Chemical Kinetics Analysis 
+\end{itemize}
+
+\section{Introduction}\label{Chap2_01}
+\esection{Introduction}
+In order to consolidate the aspects related to the study of interfacial bubbles and intermetallic compounds in solder joints, it is a good idea to highlight the (i) ongoing research approaches by the investigators,(ii) introductory background of novel experimental method utilized in this study, (iii) object-oriented concepts on CALPHAD and chemical kinetics as well as (iv) brief presentation of the relevant numerical methods and computational softwares. This chapter is thus focused on these materials. Section 2.2 is concerned with the outlining of research activities performed by several scientists and engineers in the fields of voids and field-gradient related IMC. This  is followed by the explanation of the synchrotron radiation imaging technique and its potential benefits in the microstructural analysis in solder joints (section 2.3). The concepts on CALPHAD and chemical kinetics associated with present study are outlined in section 2.4. The last portion of this chapter i.e. section 2.5 is devoted to the description of the numerical methods namely- finite element  and finite volume methods. Also,in this section, several computer based softwares such as Elmer, FiPy, MOOSE, OpenCalphad and Cantera are described.
+\section{Research Trends about Interfacial Voids in Lead-free Solders}
+\esection{Research Trends about Interfacial Voids in Lead-free Solders}
+\paragraph*{•}
+The cause for formation and growth factors of voids in solder - Cu$_6$Sn$_5$ interface during multireflow soldering has been investigated by Lin and Luo ~\cite{XLin2007}. It has been found in the study that the volume shrinkage during the phase transformation leads to appearance of the voids.The growth rate of the void has been connected with the initial morphology of the IMC. The maximum sizes of these voids has been described to be around 3 $\mu$m. Sangil Lee and coworkers  have performed a study of underfill void formation in Sn/Pb solder joints in flip chip assembly ~\cite{SLee2009thesis}\cite{SLee2009JEP}\cite{SLee2010} \cite{SLee2012}. From the gas chromatography and mass spectrum (GC-MS) study, water vapor and carboxylic acid vapor have been considered as the dominant source of underfilling voiding in the given solder joint. An inference can be made from this study that for soldering phenomena using flux materials, the bubbles get generated due to the gaseous material trapped at high temperatures and thr growth of these bubbles may impose several challenges to the reliability of solder joints. 
+\paragraph*{•}
+Wang Xinxin et al. ~\cite{WXinxin2012} have investigated the presence of planar micro voids in Sn37Pb and Sn3.0Ag0.5Cu solder joints in high density LED packages under as-reflowed and isothermal 
+aged conditions using the X-ray detection facility. Under as-reflowed conditions, the ratio of the micro voids area to the solder joint area is observed to be greater in case of the
+Sn3.0Ag0.5Cu solder type (ratio=0.255) than Sn37Pb type (ratio=0.235). These data which have shown the area ratios to be well within the acceptable range (<25$\%$) for both solder
+joint types, however, suggest that Pb free solder joints are more susceptible to microvoiding than the leaded solder joints. Moreover, the area ratio was observed to be as high as 0.314 for
+the solder joint subjected to isothermal aging. The finding is an important milestone for researchers in knowing the rationale behind the research efforts for minimization of void growth in lead free solders. As the design step of suitable manufacturing methods for reduction microvoids in solder joints is preceded by the modeling or simulation of voids evolution, the computer works related to analysis of void growth has gained a significant highlights currently. However, it is equally important to take experimental measurements of the voids to provide validation to the numerical analysis.
+As the location, size and dynamics of gas bubbles in solder joints require the use of a more sophisticated experimental technique, Ma et al. ~\cite{HMa2012} have utilized synchrotron radiation technqiue to assess the formation as well growth behavior of the interfacial voids in soldering process. The mechanism of formation of bubble, growth behavior and its effect on interfacial IMC growth has been additionally investigated by Qu et al ~\cite{LQu2014APSUSC}. For Sn-based solders, the bubbles are observed to nucleate via heterogeneous nucleation. These observed bubbles are categorized as single bubbles and multiple bubbles in accordance to the absence and presence of  merging phenomena during the evolution process. The bubble is found to affect the Cu dissolution rate at its vicinity in a significant manner.
+
+\section{Research Trends about Intermetallic Compound Growth in presence of Field Gradient}
+\esection{Research Trends about Intermetallic Compound Growth in presence of Field Gradient}
+In the solder joints , electric and thermal field gradients are the commonly encountered field gradients. The effects of these field gradients are more pronounced when the solder is in liquid state. The growth of IMC owing to the thermomigration and electromigration of Cu in the Cu/liquid Sn/Cu joints can be tracked more vividly and hence the analysis can be extrapolated to the description of mechanisms as well as kinetics for the solder joints of real application. Several researchers have investigated the effects of electromigration and thermomigration on the growth kinetics of Cu$_6$Sn$_5$ IMC in solid Sn-based solders ~\cite{BChao2006} \cite{BChao2007}\cite{BChao2009},\cite{TYlee2001}\cite{HGan2002} \cite{HGan2005}\cite{KNtu2007}~\cite{KNtu2011},~\cite{YDlu2009},
+\cite{CEho2014}\cite{LChen2010}\cite{MLhuang2012}\cite{LMeinhausen2013}\cite{HYhsiao2009}  \cite{MFAbdulhamid2008}\cite{MFAbdulhamid2009}\cite{ZNing2015}.  M. S Park and coworkers have performed phase field simulation for growth analysis of IMC under electromigration ~\cite{MSpark2013}\cite{AnilHUZHEJIANG05}\cite{RomaKBBK:2000}
+\cite{Jennyjessicarenqiao24792} \cite{AZGGH:2002}. It has been observed and numerically calculated from these findings that the IMC size is bigger in the anode side of the solder joint whereas as is in a decreased size in the cathode.
+\paragraph*{•} 
+The pronounced electromigration of Cu in molten Sn-based solders has been investigated by Huang et al \cite{JRhuang2008} and it has been mentioned therein that unlike solid-state electromigration, liquid solders are characterized by the absence of back-stress flux and the significant presence of countering flux of  chemical potential gradient. The built up of Cu$_6$Sn$_5$ IMC is accelerated due to the combined effect of applied current and the molten state of the solder. Thermomigration in unpowered solder joints at liquid state has been studied in \cite{YMguo2012}\cite{CChen2012} and it is therein highlighted the asymmetrically bigger Cu$_6$Sn$_5$ compound thickness at the cold end of the solder joints. In their independent study, Yazzie et al.\cite{KEyazzie2012} have observed the asymmetrical growth behavior of intermetallic compound layer in one end of the Sn-rich solder during extended reflows on Cu substrates. Although they have discussed on the mechanisms other than thermomigration, the observation pattern of IMCs in the two ends are similar to that of \cite{YMguo2012}\cite{CChen2012}. In an in-situ experimental study, Qu et al. \cite{LQu2014JAP} have applied Synchrotron radiation real-time imaging technology to study the  effect of thermomigration on intermetallic compounds growth in liquid-solid interfacial reactions for Cu/liquid Sn/Cu solder joints. This observation is in agreement to the earlier explanations of thermotransport of Cu in molten solders.  
+
+\section{Use of Synchrotron Radiation Real-time Imaging Technique  for Observation of Interfacial Phenomena in Liquid Solder Joints} 
+\esection{Use of Synchrotron Radiation Real-time Imaging Technique  for Observation of Interfacial Phenomena in Liquid Solder Joints}
+Over the last few decades, synchrotron radiation (SR) imaging have brought great new opportunities to investigate the internal structures of materials non-destructively  and with unprecedented high resolutions \cite{YCheng2013}. With the SR techniques, the examination of materials can be done by preserving the realistic boundary conditions. Figure 2.1 depicts the schematic diagram for the experimental set up for observation of solder-Cu substrate interface using synchrotron radiation imaging technique. The high intensity beam radiation from  x-ray source is made to pass through the solder-substrate system and the image produced on the screen by the transmitted beam is recorded by a charge coupled device (CCD) camera.
+\begin{figure}[h]
+\begin{center}
+  \begin{tabular}{c}
+  \includegraphics[width=0.856\textwidth]{C2F1_schematic_synchrotron_radiation_imaging.png}
+  \end{tabular}
+  \caption{The schematic sketch for explanation of experimental set up for synchrotron radiation visualization technique.}
+\end{center}
+\end{figure}
+\subsection{Theory of synchrotron radiation observation for interfacial bubbles and IMCs}
+When an X-ray is interferred by an object such as solder joint/Cu substrate of thickness range 50 - 100 $\mu$, the portion of the incident radiation beam is absorbed by the material and the remaining part is transmitted through the solder system. Thus,  the intensity of the beam after transmission is less than the incident beam. If an X-ray beam incident on the solder-substrate system of thickness x has an original intensity I$_o$, then the resultant intensity(I) after penetration is expressed as~\cite{LQu2014APSUSC}:
+\begin{equation}
+I = I_{o}e^{-\alpha\rho x}
+\end{equation} 
+where,$\alpha$ and $\rho$ are the absorptivity and density of the medium. From the equation it can be generalized that the intensity of the beam after transmission reduces with the increase of absorptivity, density and thickness of the medium. It is important to note that thinner samples producing higher intensity beams are subsequently preferable for experiments with synchrotron radiation. 
+\paragraph*{•}
+In comparison to the solder, substrate and the IMC materials, the bubbles have negligibly small value of $\alpha$ and $\rho$ ...
 
 The aim of this chapter is to discuss the recent state of the art and principles in the general areas of socially-aware networking such as user social behaviors, user mobility, middleware solutions for ad-hoc social networks, data replication, load balancing and user selfishness. Representative examples of work in these three areas since 2001 are reviewed with respect to the methods and techniques employed to circumvent present limitations and extend the frontier into the design of middleware protocols. At the end of each section, particularly on middleware solutions, replication and selfishness; a fairly few critical evaluation remarks are made on the work in progress and the prospects of success in the near future. While substantial progress has been made, especially in designing data dissemination and incentive schemes, in the last few years, the data management aspect related to data availability, load balancing and selfishness problems appears as formidable as ever and no breakthrough idea has yet been recognized.
 
