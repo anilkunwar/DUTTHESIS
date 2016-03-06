@@ -56,7 +56,49 @@ I = I_{o}e^{-\alpha\rho x}
 \end{equation} 
 where,$\alpha$ and $\rho$ are the absorptivity and density of the medium. From the equation it can be generalized that the intensity of the beam after transmission reduces with the increase of absorptivity, density and thickness of the medium. It is important to note that thinner samples producing higher intensity beams are subsequently preferable for experiments with synchrotron radiation. 
 \paragraph*{•}
-In comparison to the solder, substrate and the IMC materials, the bubbles have negligibly small value of $\alpha$ and $\rho$ ...
+\paragraph*{•}
+In comparison to the solder, substrate and the IMC materials, the bubbles have negligibly small values of $\alpha$ and $\rho$. Hence, the reduction in I in accordance to equation (2.1) is lower when the beam passes through the material containing bubbles. This enables the region with bubbles to appear with more contrast than the surrounding portion in the images produced via CCD camera. The difference in the magnitudes of  $\alpha$ and $\rho$ for the materials of Cu, molten Sn and IMCs makes them appear with varying contrasts in the resulting image.
+
+\section{Finite Element Methods and Numerical Simulation Softwares } 
+\esection{Finite Element Methods and Numerical Simulation Softwares }
+The process of subdividing the systems into their individual components or 'elements', whose behaviour is readily understood, and then rebuilding the original system from such components to study its behaviour is a natural way in which the engineer, the scientist or economist proceeds \cite{OCzienkiewicz2000}. The finite element method (FEM) is a numerical technique for solving partial differential equations (PDEs) essentially characterized by the following four features \cite{EDick2009}:
+\begin{itemize}
+\item  The continuum field, or domain, is subdivided into cells, called elements , which form a grid. The elements
+(in 2D) have a triangular or a quadrilateral form and can be rectilinear or curved. The grid itself need not be structured. With unstructured grids and curved cells , complex geometries can be handled with ease.
+\item The solution of the discrete problem is assumed a priori to have a prescribed form. The solution has to belong to a function space , which is built by varying function values in a given way, for instance linearly or quadratically, between values in nodal points. The nodal points,or nodes , are typical points of the elements such as vertices, mid-side points, mid-element points, etc. Due to this choice, the representation of the solution is strongly linked to the geometric representation of the domain.
+\item  A FEM does not look for the solution of the PDE itself, but looks for a solution of an integral form of the PDE. The most
+general integral form is obtained from a weighted residual formulation . By this formulation the method acquires the ability to naturally incorporate differential type boundary  conditions
+and  allows  easily  the  construction  of  higher  order  accurate methods.
+\item  The FEM is the modular way in which the discretization is obtained. The discrete equations are constructed from contributions on the element level which afterwards are
+assembled.
+
+\end{itemize}
+The historical evolution of FEM is depicted by the following figure 2.2. 
+\begin{figure}[h]
+\begin{center}
+  \begin{tabular}{c}
+  \includegraphics[width=0.856\textwidth]{C2F2_fem_evolution.jpg}
+  \end{tabular}
+  \caption{Chart showing the historical evolution pattern of present day FEM \cite{OCzienkiewicz2000} .}
+\end{center}
+\end{figure}
+Numerous softwares written in different programming languages have been developed for performing finite element analysis in physical system. For the purpose of this dissertation works, Elmer multiphysics software and MOOSE framework are discussed  briefly in the following sections.
+\subsection{Elmer Multiphysics Software}
+Elmer
+\subsection{MOOSE Framework}
+MOOSE 
+\section{Finite Volume Methods and FiPy} 
+\esection{Finite Volume Methods and FiPy}
+Application of Numerical Methods in Engineering
+\subsection{FiPy}
+
+\section{CALPHAD, Thermodynamics and Chemical Kinetics Softwares}
+\esection{CALPHAD, Thermodynamics and Chemical Kinetics Softwares}
+\subsection{Cantera}
+\subsection{OpenCalphad}
+
+review
+...
 
 The aim of this chapter is to discuss the recent state of the art and principles in the general areas of socially-aware networking such as user social behaviors, user mobility, middleware solutions for ad-hoc social networks, data replication, load balancing and user selfishness. Representative examples of work in these three areas since 2001 are reviewed with respect to the methods and techniques employed to circumvent present limitations and extend the frontier into the design of middleware protocols. At the end of each section, particularly on middleware solutions, replication and selfishness; a fairly few critical evaluation remarks are made on the work in progress and the prospects of success in the near future. While substantial progress has been made, especially in designing data dissemination and incentive schemes, in the last few years, the data management aspect related to data availability, load balancing and selfishness problems appears as formidable as ever and no breakthrough idea has yet been recognized.
 
